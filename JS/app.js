@@ -203,35 +203,35 @@ function cardCheck(x){
   }
   
   if(firstFlip == secondFlip){
-  	var points = document.getElementById("points");
-  	console.log("match");
+    var points = document.getElementById("points");
+    console.log("match");
     if(firstFlip == 1){
-    	totalPoints++
-    	var ab = document.getElementById("one");
+      totalPoints++
+      var ab = document.getElementById("one");
       ab.style.animationPlayState = "running";
       var cd = document.getElementById("two");
       cd.style.animationPlayState = "running";
       points.innerText = "Points: " + totalPoints;
     }
     if(firstFlip == 2){
-    	totalPoints++
-    	var ef = document.getElementById("three");
+      totalPoints++
+      var ef = document.getElementById("three");
       ef.style.animationPlayState = "running";
       var gh = document.getElementById("four");
       gh.style.animationPlayState = "running";
       points.innerText = "Points: " + totalPoints;
     }
     if(firstFlip == 3){
-    	totalPoints++
-    	var ij = document.getElementById("five");
+      totalPoints++
+      var ij = document.getElementById("five");
       ij.style.animationPlayState = "running";
       var kl = document.getElementById("six");
       kl.style.animationPlayState = "running";
       points.innerText = "Points: " + totalPoints;
     }
     if(firstFlip == 4){
-    	totalPoints++
-    	var mn = document.getElementById("seven");
+      totalPoints++
+      var mn = document.getElementById("seven");
       mn.style.animationPlayState = "running";
       var op = document.getElementById("eight");
       op.style.animationPlayState = "running";
@@ -270,9 +270,9 @@ function cardCheck(x){
       points.innerText = "Points: " + totalPoints;
     }
 
-  	flipCounter = 0;
-  	firstFlip = 0;
-  	secondFlip = 0; 	
+    flipCounter = 0;
+    firstFlip = 0;
+    secondFlip = 0; 	
   }
 
   console.log(firstFlip);
@@ -280,23 +280,23 @@ function cardCheck(x){
   
   //delay timing of card flipping back over
   setTimeout(
-  	function delay(){
-	  	if(flipCounter == 2 && firstFlip != secondFlip){
-		    console.log("no match");
-		    flipCounter = 0;
-		    firstFlip = 0;
-		  	secondFlip = 0;
-        
-		  	var idFrontNames = ["a", "c", "e", "g", "i", "k", "m", "o", "q", "s", "u", "w", "y", "aa", "cc", "ee"];
-  			var idBackNames = ["b", "d", "f", "h", "j", "l", "n", "p", "r", "t", "v", "x", "z", "bb", "dd", "ff"];
-				for(var z = idFrontNames.length; z > 0; z--){
-					frontId = idFrontNames.splice(0, 1)[0];
-					backId = idBackNames.splice(0, 1)[0];
-          
-					document.getElementById(frontId).style.transform = "rotateY(-180deg)";
-		  	  document.getElementById(backId).style.transform = "rotateY(0deg)";		
-				}
-	    }
+    function delay(){
+      if(flipCounter == 2 && firstFlip != secondFlip){
+        console.log("no match");
+	flipCounter = 0;
+	firstFlip = 0;
+	secondFlip = 0;
+
+	var idFrontNames = ["a", "c", "e", "g", "i", "k", "m", "o", "q", "s", "u", "w", "y", "aa", "cc", "ee"];
+	var idBackNames = ["b", "d", "f", "h", "j", "l", "n", "p", "r", "t", "v", "x", "z", "bb", "dd", "ff"];
+	for(var z = idFrontNames.length; z > 0; z--){
+	  frontId = idFrontNames.splice(0, 1)[0];
+	  backId = idBackNames.splice(0, 1)[0];
+
+	  document.getElementById(frontId).style.transform = "rotateY(-180deg)";
+          document.getElementById(backId).style.transform = "rotateY(0deg)";		
+        }
+      }
     }, 1400);
 
   //winner ending animation
@@ -329,17 +329,17 @@ function cardCheck(x){
 
 //checks amount of points at 0 seconds left
 setInterval(function(){
-    //loser animation
-    //make sure to change totalPoints < ? , the ? should be set to the mac points
-    if(totalPoints < 8 && time == 0){
-      var loser = document.getElementById("loser");
-      setTimeout(function(){
+  //loser animation
+  //make sure to change totalPoints < ? , the ? should be set to the mac points
+  if(totalPoints < 8 && time == 0){
+    var loser = document.getElementById("loser");
+    setTimeout(function(){
       loser.style.display = "block";
       loser.style.animationPlayState = "running";
 
       document.getElementById("wrapper").style.display = "none"; 
-      }, 1000);
-    }
+    }, 1000);
+  }
 }, 1000);
 
 function gameOver(){
