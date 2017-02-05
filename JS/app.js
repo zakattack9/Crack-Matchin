@@ -91,59 +91,59 @@ var totalPoints = 0;
 
 function cardCheck(x){
   if(x == 1){
-  	firstFlip = 1;
-  	flipCounter++;
-  	document.getElementById("a").style.transform = "rotateY(0deg)";
-  	document.getElementById("b").style.transform = "rotateY(-180deg)"; 
+    firstFlip = 1;
+    flipCounter++;
+    document.getElementById("a").style.transform = "rotateY(0deg)";
+    document.getElementById("b").style.transform = "rotateY(-180deg)"; 
   }
 
   if(x == 2){
-  	secondFlip = 1;
-  	flipCounter++;
-  	document.getElementById("c").style.transform = "rotateY(0deg)";
-  	document.getElementById("d").style.transform = "rotateY(-180deg)";
+    secondFlip = 1;
+    flipCounter++;
+    document.getElementById("c").style.transform = "rotateY(0deg)";
+    document.getElementById("d").style.transform = "rotateY(-180deg)";
   }
 
   if(x == 3){
-  	firstFlip = 2;
-  	flipCounter++;
-  	document.getElementById("e").style.transform = "rotateY(0deg)";
-  	document.getElementById("f").style.transform = "rotateY(-180deg)";
+    firstFlip = 2;
+    flipCounter++;
+    document.getElementById("e").style.transform = "rotateY(0deg)";
+    document.getElementById("f").style.transform = "rotateY(-180deg)";
   }
 
   if(x == 4){
-  	secondFlip = 2;
-  	flipCounter++;
-  	document.getElementById("g").style.transform = "rotateY(0deg)";
-  	document.getElementById("h").style.transform = "rotateY(-180deg)";
+    secondFlip = 2;
+    flipCounter++;
+    document.getElementById("g").style.transform = "rotateY(0deg)";
+    document.getElementById("h").style.transform = "rotateY(-180deg)";
   }
 
   if(x == 5){
-  	firstFlip = 3;
-  	flipCounter++;
-  	document.getElementById("i").style.transform = "rotateY(0deg)";
-  	document.getElementById("j").style.transform = "rotateY(-180deg)";
+    firstFlip = 3;
+    flipCounter++;
+    document.getElementById("i").style.transform = "rotateY(0deg)";
+    document.getElementById("j").style.transform = "rotateY(-180deg)";
   }
   
   if(x == 6){
-  	secondFlip = 3;
-  	flipCounter++;
-  	document.getElementById("k").style.transform = "rotateY(0deg)";
-  	document.getElementById("l").style.transform = "rotateY(-180deg)";
+    secondFlip = 3;
+    flipCounter++;
+    document.getElementById("k").style.transform = "rotateY(0deg)";
+    document.getElementById("l").style.transform = "rotateY(-180deg)";
   }
   
   if(x == 7){
-  	firstFlip = 4;
-  	flipCounter++;
-  	document.getElementById("m").style.transform = "rotateY(0deg)";
-  	document.getElementById("n").style.transform = "rotateY(-180deg)";
+    firstFlip = 4;
+    flipCounter++;
+    document.getElementById("m").style.transform = "rotateY(0deg)";
+    document.getElementById("n").style.transform = "rotateY(-180deg)";
   }
   
   if(x == 8){
-  	secondFlip = 4;
-  	flipCounter++;
-  	document.getElementById("o").style.transform = "rotateY(0deg)";
-  	document.getElementById("p").style.transform = "rotateY(-180deg)";
+    secondFlip = 4;
+    flipCounter++;
+    document.getElementById("o").style.transform = "rotateY(0deg)";
+    document.getElementById("p").style.transform = "rotateY(-180deg)";
   }
 
   if(x == 9){
